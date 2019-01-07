@@ -9,6 +9,11 @@
   <body>
     <div class="main">
       <h2>News API - PHP Practice</h2>
+      <h5>Top Headlines from Australia</h5>
+      <div class="flex-container headlines">
+        <?php include_once 'includes/headlines.php';?>
+      </div>
+      <hr>
       <!--Generate the sources select-->
       <select>
         <option value="#" selected disabled>Select a source</option>

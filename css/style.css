@@ -1,0 +1,12 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  
+  .flex-container > div {
+    width: 18%;
+    margin: 15px;
+    min-width: 150px;
+    border-radius: 3px;
+  }

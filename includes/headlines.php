@@ -5,7 +5,11 @@
     $articles = $json->{'articles'};
     //Loop through list of articles provided by the API
     foreach($articles as $item) {
+        echo "<div>";
         echo $item->{'title'}."<br>";
         echo $item->{'source'}->{'name'}."<br>";
+        echo $item->{'description'}."<br>";
+        echo "<a target='_blank' href=".$item->{'url'}.">Learn More</a>"."<br>";
+        echo "</div>";
     }
 ?>
