@@ -6,10 +6,9 @@
     //Loop through list of articles provided by the API
     foreach($articles as $item) {
         echo "<div>";
-        echo $item->{'title'}."<br>";
-        echo $item->{'source'}->{'name'}."<br>";
-        echo $item->{'description'}."<br>";
-        echo "<a target='_blank' href=".$item->{'url'}.">Learn More</a>"."<br>";
+        echo "<h4 class='hl_heading'>".$item->{'title'}."</h4>";
+        echo "<p class='hl_desc'>".$item->{'description'}."</p>";
+        echo "<a target='_blank' href=".$item->{'url'}.">Learn More</a>";
         echo "</div>";
     }
 ?>

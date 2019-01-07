@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News API</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
   </head>
   <body>
     <div class="main">
       <h2>News API - PHP Practice</h2>
-      <h5>Top Headlines from Australia</h5>
+      <h3>Top Headlines from Australia</h3>
       <div class="flex-container headlines">
         <?php include_once 'includes/headlines.php';?>
       </div>
