@@ -1,6 +1,7 @@
 <?php
     require 'variables.php';
-    $api = file_get_contents('https://newsapi.org/v2/top-headlines?country=au&pageSize=5&apiKey='.$key);
+    $sid = $_POST['id'];
+    $api = file_get_contents('https://newsapi.org/v2/top-headlines?sources='.$sid.'&apiKey='.$key);
     $json = json_decode($api);
     $articles = $json->{'articles'};
     //Loop through list of articles provided by the API
